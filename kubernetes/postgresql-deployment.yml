@@ -1,11 +1,9 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: postgresql
 spec:
   replicas: 1
-  selector:
-    name: postgresql
   template:
     metadata:
       name: postgresql
