@@ -5,6 +5,8 @@ metadata:
   labels:
     name: redis
 spec:
+  type: ClusterIP
+  clusterIP: "172.16.2.3"
   ports:
     - name: redis
       port: 6379

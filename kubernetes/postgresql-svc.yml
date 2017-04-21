@@ -5,6 +5,8 @@ metadata:
   labels:
     name: postgresql
 spec:
+  type: ClusterIP
+  clusterIP: "172.16.2.2"
   ports:
     - name: postgres
       port: 5432
